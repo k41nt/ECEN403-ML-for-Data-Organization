@@ -1,6 +1,6 @@
 I used Python 3.5 (should be fine for any Python 3 version)
 
-You need to install pdfminer.six package first using the command below:
+You need to install pdfminer.six package first using the command:
 pip install pdfminer.six
 
 To run the code:
