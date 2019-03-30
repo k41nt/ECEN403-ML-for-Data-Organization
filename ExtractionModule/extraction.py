@@ -49,6 +49,7 @@ def convert_extract(path):
     with open((path[:-3])+'json', 'w') as file_out:
         text = re.sub("\\s\\s+", "\\n", text)
 
+
         #dictionary to store the keys and values    
         dictionary = {}
         for line in text.splitlines():    

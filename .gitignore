@@ -1,5 +1,10 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+.vscode/
+ExtractionModule/Drilling Reports/
+ExtractionModule/HtmlTestExtraction/
+ExtractionModule/PdfTestExtraction/
+ExtractionModule/OutputResearchData/
 *.py[cod]
 *$py.class
 
