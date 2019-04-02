@@ -81,7 +81,7 @@ class HtmlExtractor(object):
         htmlStarted = False
         for l in htmlFile:
             if (not htmlStarted):
-                if (l.find("<body>")):
+                if (l.find("<body>") != -1):
                     htmlStarted = True
                     l = l.replace(l[0:l.find("<body>")],"")
             if (htmlStarted):
@@ -227,8 +227,7 @@ if __name__ == "__main__":
             elif(f.find(".html") != -1):
                 iName = os.path.join(path,f)
                 
-                htmlFile = open(iName,"r")
-                #htmlExtractor.extractToText(htmlFile)
+                htmlExtractor.extractToText(iName)
                 
                 docnames.append(iName.replace(".html",".txt"))
 
